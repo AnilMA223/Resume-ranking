@@ -1,0 +1,29 @@
+<!doctype html>
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head> 
+<body> 
+  <h2><a href="chart1">Analytics</a></h2>
+
+  
+  <table>
+    <tr>
+      {% for header in headings %}
+      <th>{{header}}</th>
+	  {% endfor %}
+    </tr>
+	{% for row in data %}
+	<tr>
+	  {% for cell in row %}
+      <td>{{cell}}</td>
+	  {% endfor %}
+	</tr>
+	  {% endfor %}	
+  </table>
+</body>
+</html>
+
+
+
+

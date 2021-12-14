@@ -1,0 +1,20 @@
+<html>  
+<head>  
+    <title>upload</title>  
+</head>  
+<body style="background-color:green;">  
+    <form action = "/success" method = "post" enctype="multipart/form-data" style="text-align:center;">
+		<div style = "position:relative; left:40px; down:2px; background-color:yellow;">
+		<label for="resume"><h2>upload Resume</h2></label>
+        <input type="file" id="docpicker" name="resume" accept="image/*,.pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" multiple><br>
+        </div><br>
+		<div style = "position:relative; left:40px; down:2px; background-color:yellow;">
+		<label for="jd"><h2>upload job description</h2></label>
+        <input type="file" id="docpicker" name="jd" accept="image/*,.pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"><br>
+        </div><br>
+		<div style = "position:relative; left:40px; down:2px;">
+		<input type = "submit" value="Upload" style="width:100px;height:50px">
+		</div>
+    </form>  
+</body>  
+</html>  

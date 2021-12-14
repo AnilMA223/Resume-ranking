@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<body style="font-family:arial, sans-serif">
+    <h1>{{header}}</h1>
+    <div id="chart" class="chart"></div>
+</body>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+    var graphs = {{graphJSON | safe}};
+    Plotly.plot('chart',graphs,{});        
+</script>
+<div>
+<table>
+    <tr>
+      {% for header in headings %}
+      <th>{{header}}</th>
+	  {% endfor %}
+    </tr>
+	{% for row in data %}
+	<tr>
+	  {% for cell in row %}
+      <td>{{cell}}</td>
+	  {% endfor %}
+	</tr>
+	  {% endfor %}	
+  </table>
+</div>
+</html>
+
+
+
+
+
+
+
